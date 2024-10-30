@@ -14,32 +14,108 @@ body{
     background-position: center; /* Centers the image */
     font-size: 16px;
 }
-@media (max-width: 390px) {
+@media only screen and (max-width: 390px) {
+    /*--------------------Header---------------------*/
     .headerbody {
-        flex-direction: column;
+        flex-direction: column !important;
         text-align: center;
         padding: 10px;
     }
 
     .hmpgrect{
-        display: none;
+        display: none !important;
+    }
+    header {
+        min-height: 100px !important;
+    }
+    .navinline {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center; 
+        width: 100%; 
+        padding-top: 50px;
+        margin-top: 50px !important;
+        font-size: auto !important;
     }
 
-    #centertopright {
-        margin-top: 10px;
+    .navinline ul {
+        padding: 0; 
+        margin: 0; 
+        width: 100%; 
     }
 
+    .navinline ul li {
+        display: block !important; 
+        text-align: center; 
+        padding: 15px 0; 
+        width: 100%; 
+    }
     .navi {
         display: none;
     }
+    /*------------------End Header-------------------*/
+    /*--------------------Index----------------------*/
+    .table1 {
+        width: 100%; 
+        margin-left: 10%;
+    }
+    .tableindex{
+        box-shadow: none !important;
+    }
+    .tableindex tr {
+        display: flex; /* Flexbox for the row */
+        flex-direction: column; /* Stack cells vertically */
+        width: 100%; /* Full width */
+        margin-bottom: 15px; /* Space between rows */
+    }
 
+    .tableindex td {
+        flex: 1;
+        display: block;
+        width: 80%; /* Full width for each cell */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+    .col1{
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    .col2{
+        border-radius: 0px 0px 8px 8px !important;
+    }
+    /* Additional Styles for Image and Text Alignment */
+    #picfm {
+        width: 100% !important;
+        height: auto !important; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    #Normaltext {
+        font-size: 110% !important; /* Reduce font size for better readability */
+        margin: 10px 0; /* Add some spacing */
+    }
+    .table2 {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .col3{
+        text-align: left !important;
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    td.center{
+        border-radius: 0px 0px 8px 8px !important;
+    }
+    #bp{
+        font-size: 110% !important; /* Reduce font size for better readability */
+        margin: 10px 0; /* Add some spacing */
+    }
+    /*------------------End Index--------------------*/
     .mainmy {
         width: 100%;
         margin: 0;
         padding: 10px;
         box-shadow: none;
     }
-
+    /*------------------My Journey-------------------*/
     .bgmyj {
         display: none !important;
     }
@@ -59,40 +135,150 @@ body{
         margin: 10px 0; /* Space between table cells */
         box-sizing: border-box;
     }
-    
+    /*----------------End My Journey-----------------*/
     .footer {
         padding-left: 5px;
         font-size: 90%;
     }
 }
-@media (max-width: 844px) {
+@media only screen and (max-width: 844px) {
+    /*--------------------Header---------------------*/
     .headerbody {
-        padding: 10px;
-    }
+        flex-direction: column;
+        text-align: center !important;
+        align-items: center ;
+        padding: 0px;
+        display: flex;
 
-    .hmpgrect h1 {
-        font-size: 250%; /* Adjust title size for landscape */
     }
-
-    .navi {
-        width: 30%;
-        padding: 10px;
-    }
-
-    .mainmy {
-        width: 65%;
-        margin: 0 auto;
-        padding: 10px;
-    }
-
-    .bgmyj {
+    .hmpgrect {
+        align-items: center ; /* Vertically center the items */
+        font-size: 80%; /* Sets the font size for the text */
+        padding: 10px; /* Optional: Add some padding to the div */
         width: 100%;
-        height: auto;
+    }
+    
+    .hmpgrect img {
+        width: 50px; /* Sets the width of the image */
+        margin-right: 5px; /* Space between the image and text */
+        margin-top: 12px;
+    }
+    
+    .hmpgrect h1 {
+        margin: 0; /* Remove default margin from h1 */
+        display: inline; /* Ensure h1 displays inline */
+        color: #ad59e5 !important;
+    }
+    header {
+        min-height: 200px;
+    }
+    .navinline {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center; 
+        width: 100%; 
+        margin-top: -50px ;
+        padding-top: 0px;
     }
 
-    .treetable td {
-        width: 45%;
+    .navinline ul {
+        padding: 0; 
+        margin: 0; 
+        width: 100%; 
+    }
+
+    .navinline ul li {
+        display: block !important; 
+        text-align: center; 
+        padding: 15px 0; 
+        width: 100%; 
+    }
+    /*------------------End Header-------------------*/
+    /*--------------------Index----------------------*/
+    .table1 {
+        width: 100%; 
+        margin-left: 10%;
+    }
+    .tableindex{
+        box-shadow: none !important;
+    }
+    .tableindex tr {
+        display: flex; /* Flexbox for the row */
+        flex-direction: column; /* Stack cells vertically */
+        width: 100%; /* Full width */
+        margin-bottom: 15px; /* Space between rows */
+    }
+
+    .tableindex td {
+        flex: 1;
+        display: block;
+        width: 80%; /* Full width for each cell */
+        padding: 10px; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+    .col1{
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    .col2{
+        border-radius: 0px 0px 8px 8px !important;
+    }
+    /* Additional Styles for Image and Text Alignment */
+    #picfm {
+        width: 100% !important;
+        height: auto !important; /* Maintain aspect ratio */
+        object-fit: cover;
+    }
+
+    #Normaltext {
+        font-size: 110% !important; /* Reduce font size for better readability */
+        margin: 10px 0; /* Add some spacing */
+    }
+    .table2 {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .col3{
+        text-align: left !important;
+        border-radius: 8px 8px 0px 0px !important;
+    }
+    td.center{
+        border-radius: 0px 0px 8px 8px !important;
+    }
+    #bp{
+        font-size: 110% !important; /* Reduce font size for better readability */
+        margin: 10px 0; /* Add some spacing */
+    }
+    /*------------------End Index--------------------*/
+    .mainmy {
+        width: 100%;
+        margin: 0;
         padding: 10px;
+        box-shadow: none;
+    }
+    /*------------------My Journey-------------------*/
+    .bgmyj {
+        display: none !important;
+    }
+    .treetable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .treetable tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .treetable td {
+        width: 90%; /* Adjust width to fit container neatly */
+        margin: 10px 0; /* Space between table cells */
+        box-sizing: border-box;
+    }
+    /*----------------End My Journey-----------------*/
+    .footer {
+        padding-left: 5px;
+        font-size: 90%;
     }
 }
 #hmp{
@@ -263,6 +449,10 @@ nav ul li{
     display: list-item;
     text-align: left;
     padding-top: 20px;
+}
+.navinline{
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out items */
 }
 .navinline ul li{
     font-family: 'Inter';
