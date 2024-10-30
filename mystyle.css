@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+body{
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-image: url('resources/bg.jpg');
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    font-size: 16px;
+}
+@media (max-width: 390px) {
+    .headerbody {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hmpgrect{
+        display: none;
+    }
+
+    #centertopright {
+        margin-top: 10px;
+    }
+
+    .navi {
+        display: none;
+    }
+
+    .mainmy {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .bgmyj {
+        display: none !important;
+    }
+    .treetable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .treetable tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .treetable td {
+        width: 90%; /* Adjust width to fit container neatly */
+        margin: 10px 0; /* Space between table cells */
+        box-sizing: border-box;
+    }
+    
+    .footer {
+        padding-left: 5px;
+        font-size: 90%;
+    }
+}
+@media (max-width: 844px) {
+    .headerbody {
+        padding: 10px;
+    }
+
+    .hmpgrect h1 {
+        font-size: 250%; /* Adjust title size for landscape */
+    }
+
+    .navi {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .mainmy {
+        width: 65%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .bgmyj {
+        width: 100%;
+        height: auto;
+    }
+
+    .treetable td {
+        width: 45%;
+        padding: 10px;
+    }
+}
+#hmp{
+    background-image: url('resources/bg.jpg');
+}
+html{
+    height: 100%;
+}
+.headerbody{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 0px;
+    background-color: rgba(232, 197, 229);
+    padding: 10px;
+    box-shadow: 0px 15px 10px -2px rgba(0,0,0,0.2);
+    align-items: center;
+}
+.hmpgrect h1{
+    font-family:'Inter';
+    color: #000000;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 300%;
+}
+.hmpgrect{
+    position: relative;
+    width: 50%;
+    height: 50px;
+    margin-top: -70px;
+    padding: 50px;
+}
+#centertopright{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 40px;
+}
+footer{
+    font-family:'Inter' ;
+    background-color:#E8C5E5;
+    color: rgb(0, 0, 0);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 4px double black;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: auto;
+}
+.icon {
+    margin-bottom: -2px;
+    width: 20px; 
+    height: 20px; 
+}
+.iconh1{
+    margin-bottom: -7px;
+    width: 50px; 
+    height: 50px; 
+}
+#vscr{
+    width: 200px;
+    height: 250px;
+}
+#picfm{
+    width: 364px;
+    height: 210px;
+}
+.table1 {
+    display: flex;
+    text-align: left;
+    width: 100%; ;
+    justify-content: center;
+    
+}
+.tableindex{
+    width: 900px;
+    height: 300px;
+    border-collapse: collapse; /* Merge borders */
+    box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.26);
+    border-radius: 8px;
+}
+td{
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.col1{
+    width: 40%;
+    background-color: #F7F9F2;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.col2{
+    width: 60%;
+    background-color: #F7F9F2;
+    vertical-align: top;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.table2{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: auto;
+}
+p#Normaltext{
+    font-family: 'Inter';
+    font-size: 200%;
+}
+p#Normaltext a{
+    text-decoration: none;
+}
+p#bp{
+    font-family: 'Inter';
+    font-size: 200%;
+}
+.col3{
+    background-color: #F7F9F2;
+    vertical-align: top;
+    border-radius: 8px 0px 0px 8px;
+}
+td.center{
+    text-align: center;
+    background-color: #F7F9F2;
+    vertical-align: top;
+    border-radius: 0px 8px 8px 0px;
+}
+/*navi*/
+
+.like img{
+    width: 160px;
+    height: 120px;
+}
+.navi{
+    background-color: #E8C5E5;
+    height: 50vh;
+    width: 15%;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(189, 16, 16);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    padding-bottom: 20px;
+    box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.3);
+}
+.navi span{
+    font-family: 'Inter';
+    font-size: 200%;
+    color:#0c4e22;
+}
+/*nav*/
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    font-family: 'Inter';
+    display: list-item;
+    text-align: left;
+    padding-top: 20px;
+}
+.navinline ul li{
+    font-family: 'Inter';
+    display: inline;
+    text-align: center;
+    padding: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #0c4e22;
+}
+nav ul li a:hover{
+    color: rgb(62, 5, 76);
+}
+nav ul li a:hover::before {
+    content: ">>"; /* Adds the arrow after the content */
+    color: inherit; /* Ensures the arrow takes the hovered color */
+    margin-right: 12px;
+}
+.navinline ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+}
+.navinline ul li a:hover{
+    color: rgb(96, 24, 150);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navinline ul li a:hover::before{
+    content:"";
+    margin-right: 0px;
+}
+/*--------------------End Sidebar----------------------------------*/
+
+.contentmy-container{
+    display: flex;
+}
+/*---------------------Content-Myj---------------------*/
+.mainmy{
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px;
+    width: 800px;
+    height: auto;
+    float: right;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+
+}
+.bgmyj{
+    background-image: url('resources/tree_growth.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    width: 1000px;
+    height: 540px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 120px;
+}
+.container{
+    padding: 0;
+}
+/*------------------Table below tree-------------*/
+.treetable{
+    width: 100%;
+    height: auto;
+    border: transparent;
+    border-spacing: 20px;
+}
+.treetable tr{
+    border: transparent;
+    
+}
+.treetable tr td{
+    background-color: transparent;
+    box-shadow: 11px 9px 23px 0px rgba(0,0,0,0.22);
+    border: transparent;
+    margin: 10px;
+    text-align: left;
+    flex-direction: column;
+    width: 200px;
+    font-family: 'Inter';
+    color: #ffffff;
+    vertical-align: top;
+}
+.treetable tr td h1{
+    text-align: left;
+    font-family: 'Inter';
+}
+
+/*--------------End-Content-for-My-journey-------------*/
+.headContentmyf{
+    background-color: #F7F9F2;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 15px 10px -2px rgba(0,0,0,0.01);
+}
+.headContentmyf h2{
+    font-family: 'Inter';
+    font-size: 300%;
+    margin: 0;
+    padding: 5px;
+}
+
+.contentmyf-pict{
+    text-align: center;
+    margin-top: 20px;
+    background: radial-gradient(c);
+    
+}
+.contentmyf-pict p{
+    font-family: 'Inter';
+    margin-top: 5px;
+    background-color: #F7F9F2;
+    border-radius: 8px;
+    padding: 5px;
+    display: inline-block;
+    margin: 15 auto;
+}
+#myfpict{
+    width: 700px;
+    height: 400px;
+    box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.4);
+}
+.description-contentmyf{
+    background-color: #F7F9F2;
+    width: 800px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 0px -5px 35px -3px rgba(0,0,0,0.22);
+}
+.description-contentmyf p{
+    text-indent: 50px;
+    font-family: 'Inter';
+}
