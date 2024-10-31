@@ -21,7 +21,9 @@ body{
         text-align: center;
         padding: 10px;
     }
-
+    body{
+        overflow-x: hidden;
+    }
     .hmpgrect{
         display: none !important;
     }
@@ -95,7 +97,7 @@ body{
     }
     .table2 {
         width: 100%;
-        margin-left: 15%;
+        margin-left: 10% !important;
     }
     .col3{
         text-align: left !important;
@@ -149,13 +151,15 @@ body{
         align-items: center ;
         padding: 0px;
         display: flex;
-
+    }
+    body{
+        overflow-x: hidden;
     }
     .hmpgrect {
         align-items: center ; /* Vertically center the items */
         font-size: 80%; /* Sets the font size for the text */
         padding: 10px; /* Optional: Add some padding to the div */
-        width: 100%;
+        width: 100%; 
     }
     
     .hmpgrect img {
@@ -235,7 +239,7 @@ body{
     }
     .table2 {
         width: 100%;
-        margin-left: 15%;
+        margin-left: 10%;
     }
     .col3{
         text-align: left !important;
@@ -384,7 +388,7 @@ td{
 .table2{
     display: flex;
     justify-content: center; /* Center horizontally */
-    width: auto;
+    width: 100%;
 }
 p#Normaltext{
     font-family: 'Inter';
